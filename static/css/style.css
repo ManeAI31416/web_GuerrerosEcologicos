@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#chatbox {
+    margin-bottom: 20px;
+    overflow: auto;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+    clear: both;
+}
+
+.received {
+    background-color: #f2f2f2;
+}
+
+.sent {
+    background-color: #4CAF50;
+    color: white;
+    float: right;
+}
+
+#decision {
+    margin-top: 20px;
+}
+
+#decision p {
+    margin-bottom: 10px;
+}
+
+#decision button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#decision button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para los botones */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #388e3c;
+}
+
+/* Estilo para el cuadro de texto */
+textarea {
+    width: 500px; /* Ajustamos el ancho para que haya espacio para el botón */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex;
+    flex-direction: column; /* Cambiamos a dirección de columna para el textarea y el botón */
+}
+
+.boton-enviar {
+    align-self: flex-end; /* Alineamos el botón al final del formulario */
+    padding: 5px 10px; /* Reducimos el padding para hacerlo más pequeño */
+    margin-top: 10px; /* Agregamos un margen superior para separarlo del textarea */
+}

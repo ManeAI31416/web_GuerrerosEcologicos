@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Ecológico</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div id="chatbox">
+            <div class="message received">{{ pregunta }}</div>
+        </div>
+        <form id="formulario">
+            <textarea id="respuesta" placeholder="Escribe tu respuesta aquí..."></textarea>
+            <button type="submit" class="boton-enviar">Enviar</button>
+        </form>
+        <div id="siguiente" style="display: none;">
+            <p>¿Deseas pasar a la siguiente pregunta?</p>
+            <button id="si">Sí</button>
+            <button id="no">No</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
